@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>The Last City</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <section id="menu" class="menu">
+    <div class="menu-noise"></div>
+    <div class="brand">
+      <div class="eyebrow">DISTRICT // 09</div>
+      <h1>THE LAST<br><span>CITY</span></h1>
+      <p>THE WORLD DIDN'T END.<br>IT JUST WENT QUIET.</p>
+    </div>
+    <div class="menu-actions">
+      <button id="startBtn" class="primary"><span>NEW JOURNEY</span><b>▶</b></button>
+      <button id="continueBtn"><span>CONTINUE</span><small>CHAPTER 01</small></button>
+    </div>
+  </section>
+
+  <div id="hud">
+    <header>
+      <div class="district"><b id="districtName">DISTRICT 09</b><small id="clock">18:42 · CLEAR</small></div>
+      <div class="score"><small>SURVIVAL SCORE</small><b id="score">000250</b></div>
+    </header>
+    <aside class="mission">
+      <small>ACTIVE OBJECTIVE</small>
+      <div class="mission-title"><i></i><b id="objectiveTitle">REACH THE SAFEHOUSE</b></div>
+      <p id="objectiveText">Follow the marked route to Central Plaza</p>
+      <div class="progress"><i id="progressBar"></i></div>
+    </aside>
+    <div id="prompt" class="prompt"><b>E</b><span>Interact</span></div>
+    <div class="compass"><i></i><span>W</span><b>N</b><span>E</span><i></i></div>
+  </div>
+
+  <div id="toast"></div>
+  <div id="touch">
+    <div id="joystick"><div id="stick"></div></div>
+    <button id="touchAction">E</button>
+  </div>
+
+  <div id="fade"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
